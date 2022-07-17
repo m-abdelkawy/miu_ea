@@ -3,20 +3,22 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-    <persistence-unit name="car_pu2">
+    <persistence-unit name="car_pu03">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
-        <class>edu.miu.cs544.week02.entity.Person</class>
-        <class>edu.miu.cs544.week02.entity.Owner</class>
-        <class>edu.miu.cs544.week02.entity.Driver</class>
-        <class>edu.miu.cs544.week02.entity.Address</class>
-        <class>edu.miu.cs544.week02.entity.Company</class>
-        <class>edu.miu.cs544.week02.entity.CarManufacturer</class>
-        <class>edu.miu.cs544.week02.entity.InsuranceCompany</class>
-        <class>edu.miu.cs544.week02.entity.Car</class>
+
+        <class>edu.miu.cs544.week03.entity.Person</class>
+        <class>edu.miu.cs544.week03.entity.Owner</class>
+        <class>edu.miu.cs544.week03.entity.Driver</class>
+        <class>edu.miu.cs544.week03.entity.Address</class>
+        <class>edu.miu.cs544.week03.entity.Company</class>
+        <class>edu.miu.cs544.week03.entity.CarManufacturer</class>
+        <class>edu.miu.cs544.week03.entity.InsuranceCompany</class>
+        <class>edu.miu.cs544.week03.entity.Car</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cs544_db2_2"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cs544_db03"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
             <property name="jakarta.persistence.jdbc.password" value="sql"/>
             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
