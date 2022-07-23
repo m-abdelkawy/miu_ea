@@ -1,0 +1,5 @@
+Project update:
+1- Make sure all your entities are thread-safe (support concurancy)
+2- The Insurance company could be modified by other applications that are not JPA. Make sure your application can work with that.
+3- Create a query that updates the DOB of a Person. This query is executed by several users of our application at the same time. 
+This could result in issues, so make this query safe. The chances of collision when using this query are very high.
