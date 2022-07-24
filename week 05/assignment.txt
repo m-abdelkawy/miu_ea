@@ -1,0 +1,15 @@
+During this week you are expected to watch Lecture 05
+
+Slides: attached
+
+Project Update:
+
+1- Log to the console every time a Car is added to the database.
+
+2- Log to the console every time a Person is deleted from the database.
+
+3- Make sure the relationship between Person and Car is lazy. 
+Then write two functions. The first function fetches a person with the name "Jack" (make sure you have a person with the name "Jack" in your database). 
+The second function takes a person and returns all the cars this person drives (by just calling the getter (getCars) on Person). Now make sure this code works. 
+Note, at first it should fail because when you enter the second function the person is detached since the first function commits the transaction at the end of it. 
+You need to solve the problem by re-attaching the person to em.
